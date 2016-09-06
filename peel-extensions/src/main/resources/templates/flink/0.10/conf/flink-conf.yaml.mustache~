@@ -115,13 +115,6 @@
 #
 {{#taskmanager.memory.fraction}}taskmanager.memory.fraction: {{taskmanager.memory.fraction}}{{/taskmanager.memory.fraction}}{{^taskmanager.memory.fraction}}# taskmanager.memory.fraction: 0.7{{/taskmanager.memory.fraction}}
 
-# If set to true, the task manager allocates memory chich is used for sorting, 
-# hash tables, and caching of intermediate results outside of the JVM heap. 
-# For setups with larger quantities of memory, this can improve 
-# the efficiency of the operations performed on the memory (DEFAULT: false).
-#
-{{#taskmanager.memory.off-heap}}taskmanager.memory.off-heap: {{taskmanager.memory.off-heap}}{{/taskmanager.memory.off-heap}}{{^taskmanager.memory.off-heap}}# taskmanager.memory.off-heap: false{{/taskmanager.memory.off-heap}}
-
 # The interval (in seconds) in which the client polls the JobManager for the
 # status of its job (DEFAULT: 2).
 #
